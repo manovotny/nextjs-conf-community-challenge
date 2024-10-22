@@ -15,7 +15,7 @@ export default function LocalStorage() {
     return () => cleanupRef.current();
   }, []);
 
-  return null;
+  return <></>;
 }
 
 function setupLocalStorage() {

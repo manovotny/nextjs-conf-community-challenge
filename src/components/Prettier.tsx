@@ -18,7 +18,7 @@ export default function Prettier() {
     return () => cleanupRef.current();
   }, []);
 
-  return null;
+  return <></>;
 }
 
 function setupPrettier() {
