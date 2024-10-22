@@ -20,7 +20,6 @@ export default function LocalStorage() {
 
 function setupLocalStorage() {
   const filenames = tutorialStore.documents.get();
-  console.log("filenames", filenames);
   const cleanups: (() => void)[] = [];
 
   for (const filename in filenames) {

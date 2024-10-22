@@ -26,6 +26,10 @@ function setupPrettier() {
   const cleanups: (() => void)[] = [];
 
   for (const filename in filenames) {
+    if (!filename.endsWith(".ts") && !filename.endsWith(".tsx")) {
+      continue;
+    }
+
     let timeout: NodeJS.Timeout;
 
     const unsubscribe = tutorialStore.onDocumentChanged(filename, (doc) => {
